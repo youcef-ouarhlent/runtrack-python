@@ -3,13 +3,13 @@ def time_to_text(minutes):
         print("Veuillez entrer un nombre entier positif de minutes.")
         return
     heures = minutes // 60
-    minutes_restantes = minutes % 60
-    if heures == 0:
-        print(f"{minutes} minutes")
-    elif minutes_restantes == 0:
+    minutes_heures = minutes % 60
+    if minutes_heures == 0:
         print(f"{heures} heures")
+    elif heures == 0:
+        print(f"{minutes} minutes")    
     else:
-        print(f"{heures} heures et {minutes_restantes} minutes")
+        print(f"{heures} heures et {minutes_heures} minutes")
 time_to_text(120)
 time_to_text(70)
 time_to_text(55)
