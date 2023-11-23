@@ -10,6 +10,6 @@ def my_long_word(nombre,chaîne_de_caractère):
         if mot_length > nombre:
             resultat += mot + " "
 
-    return resultat.strip()
+    return resultat
 output = my_long_word(3, "La peur est le chemin vers le côté obscur, la peur mène à la colère, la colère mène à la haine, la haine mène à la souffrance")
 print("Output:", output)
