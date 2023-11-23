@@ -2,12 +2,12 @@ def my_long_word(nombre,  chaine_de_caractere):
     mots =  chaine_de_caractere.split()
     resultat = ""
     for mot in mots:
-        word_length = 0
+        mot_length = 0
         for char in mot:
             if char.isalpha():  
-                word_length += 1
+                mot_length += 1
         
-        if word_length > nombre:
+        if mot_length > nombre:
             resultat += mot + " "
     return resultat.strip()  
 
